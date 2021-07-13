@@ -14,6 +14,7 @@ public:
 	}
 	virtual ~Player(){}
 
+	virtual void PrintInfo();
 
 
 protected:
@@ -21,6 +22,7 @@ protected:
 };
 
 class Knight:public Player {
+public:
 	Knight() :Player(PT_KNIGHT) {
 		_hp = 150;
 		_attack = 10;
@@ -30,6 +32,7 @@ class Knight:public Player {
 };
 
 class Archer:public Player {
+public:
 	Archer() :Player(PT_ARCHER) {
 		_hp = 80;
 		_attack = 15;
@@ -38,6 +41,7 @@ class Archer:public Player {
 };
 
 class Mage:public Player {
+public:
 	Mage() :Player(PT_MAGE) {
 		_hp = 50;
 		_attack = 25;
